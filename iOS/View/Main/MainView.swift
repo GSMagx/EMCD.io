@@ -45,6 +45,7 @@ struct MainView: View {
                     .foregroundColor(.white)
                     .padding()
                 Text("0.00000")
+                    .font(.title)
               
         }
         

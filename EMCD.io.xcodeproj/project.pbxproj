@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA05D2882610BBD4007D30B9 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05D2872610BBD4007D30B9 /* LoginView.swift */; };
 		FAFA79A9260F93300032F2D1 /* EMCD_ioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA7996260F932E0032F2D1 /* EMCD_ioApp.swift */; };
 		FAFA79AA260F93300032F2D1 /* EMCD_ioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA7996260F932E0032F2D1 /* EMCD_ioApp.swift */; };
 		FAFA79AB260F93300032F2D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA7997260F932E0032F2D1 /* ContentView.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA05D2872610BBD4007D30B9 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginView.swift; path = ../../../../LoginView.swift; sourceTree = "<group>"; };
 		FAFA7996260F932E0032F2D1 /* EMCD_ioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EMCD_ioApp.swift; sourceTree = "<group>"; };
 		FAFA7997260F932E0032F2D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FAFA7998260F93300032F2D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 		FAFA79C42610750F0032F2D1 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				FA05D2872610BBD4007D30B9 /* LoginView.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 			files = (
 				FAFA79AB260F93300032F2D1 /* ContentView.swift in Sources */,
 				FAFA79BE260F96820032F2D1 /* MainView.swift in Sources */,
+				FA05D2882610BBD4007D30B9 /* LoginView.swift in Sources */,
 				FAFA79A9260F93300032F2D1 /* EMCD_ioApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
