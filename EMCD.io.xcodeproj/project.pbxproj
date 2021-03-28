@@ -13,6 +13,8 @@
 		FAFA79AC260F93300032F2D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA7997260F932E0032F2D1 /* ContentView.swift */; };
 		FAFA79AD260F93300032F2D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAFA7998260F93300032F2D1 /* Assets.xcassets */; };
 		FAFA79AE260F93300032F2D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAFA7998260F93300032F2D1 /* Assets.xcassets */; };
+		FAFA79BE260F96820032F2D1 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA79BD260F96820032F2D1 /* MainView.swift */; };
+		FAFA79BF260F96820032F2D1 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA79BD260F96820032F2D1 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,7 @@
 		FAFA79A7260F93300032F2D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAFA79A8260F93300032F2D1 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		FAFA79B9260F93660032F2D1 /* EMCD.io.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EMCD.io.entitlements; sourceTree = "<group>"; };
+		FAFA79BD260F96820032F2D1 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +81,10 @@
 		FAFA799F260F93300032F2D1 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				FAFA79BC260F96630032F2D1 /* API */,
 				FAFA79A0260F93300032F2D1 /* Info.plist */,
+				FAFA79BB260F96520032F2D1 /* Model */,
+				FAFA79BA260F96430032F2D1 /* View */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -90,6 +96,60 @@
 				FAFA79A8260F93300032F2D1 /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		FAFA79BA260F96430032F2D1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FAFA79C6261075290032F2D1 /* Profile */,
+				FAFA79C52610751D0032F2D1 /* Notification */,
+				FAFA79C42610750F0032F2D1 /* Authentication */,
+				FAFA79C3261074F00032F2D1 /* Main */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FAFA79BB260F96520032F2D1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FAFA79BC260F96630032F2D1 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		FAFA79C3261074F00032F2D1 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				FAFA79BD260F96820032F2D1 /* MainView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		FAFA79C42610750F0032F2D1 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		FAFA79C52610751D0032F2D1 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		FAFA79C6261075290032F2D1 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAFA79AB260F93300032F2D1 /* ContentView.swift in Sources */,
+				FAFA79BE260F96820032F2D1 /* MainView.swift in Sources */,
 				FAFA79A9260F93300032F2D1 /* EMCD_ioApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -199,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAFA79AC260F93300032F2D1 /* ContentView.swift in Sources */,
+				FAFA79BF260F96820032F2D1 /* MainView.swift in Sources */,
 				FAFA79AA260F93300032F2D1 /* EMCD_ioApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
