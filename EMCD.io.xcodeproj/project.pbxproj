@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		FA05D2882610BBD4007D30B9 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05D2872610BBD4007D30B9 /* LoginView.swift */; };
+		FAE60ACA2610BF4500539D8E /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE60AC92610BF4500539D8E /* ProfileView.swift */; };
+		FAE60ACB2610BF4500539D8E /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE60AC92610BF4500539D8E /* ProfileView.swift */; };
 		FAFA79A9260F93300032F2D1 /* EMCD_ioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA7996260F932E0032F2D1 /* EMCD_ioApp.swift */; };
 		FAFA79AA260F93300032F2D1 /* EMCD_ioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA7996260F932E0032F2D1 /* EMCD_ioApp.swift */; };
 		FAFA79AB260F93300032F2D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA7997260F932E0032F2D1 /* ContentView.swift */; };
@@ -20,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		FA05D2872610BBD4007D30B9 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginView.swift; path = ../../../../LoginView.swift; sourceTree = "<group>"; };
+		FAE60AC92610BF4500539D8E /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileView.swift; path = ../../../../../Documents/ProfileView.swift; sourceTree = "<group>"; };
 		FAFA7996260F932E0032F2D1 /* EMCD_ioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EMCD_ioApp.swift; sourceTree = "<group>"; };
 		FAFA7997260F932E0032F2D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FAFA7998260F93300032F2D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -151,6 +154,7 @@
 		FAFA79C6261075290032F2D1 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				FAE60AC92610BF4500539D8E /* ProfileView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -254,6 +258,7 @@
 			files = (
 				FAFA79AB260F93300032F2D1 /* ContentView.swift in Sources */,
 				FAFA79BE260F96820032F2D1 /* MainView.swift in Sources */,
+				FAE60ACA2610BF4500539D8E /* ProfileView.swift in Sources */,
 				FA05D2882610BBD4007D30B9 /* LoginView.swift in Sources */,
 				FAFA79A9260F93300032F2D1 /* EMCD_ioApp.swift in Sources */,
 			);
@@ -263,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAE60ACB2610BF4500539D8E /* ProfileView.swift in Sources */,
 				FAFA79AC260F93300032F2D1 /* ContentView.swift in Sources */,
 				FAFA79BF260F96820032F2D1 /* MainView.swift in Sources */,
 				FAFA79AA260F93300032F2D1 /* EMCD_ioApp.swift in Sources */,
