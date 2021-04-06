@@ -17,7 +17,7 @@ struct CointsView: View {
             
             // Button, that when tapped shows 3 options
             Menu {
-                Button(action: {currientLabel = label[0]}) {
+                Button(action: {currientLabel = label[0] }) {
                     Label(label[0], image: "BTC_ico")
                 }
                 Button(action: {currientLabel = label[1]}) {
@@ -38,7 +38,7 @@ struct CointsView: View {
                 Button(action: {currientLabel = label[6]}) {
                     Label(label[6], image: "ETC_ico")
                 }
-               
+                
                 
                 
                 
@@ -49,7 +49,7 @@ struct CointsView: View {
                 
             }
             .padding(.bottom)
-                    }
+        }
         
         .frame(width: 350, height: 350)
     }

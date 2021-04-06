@@ -11,7 +11,9 @@ import SwiftUI
 struct EMCD_ioApp: App {
     var body: some Scene {
         WindowGroup {
+            
             ContentView()
+            
         }
     }
 }

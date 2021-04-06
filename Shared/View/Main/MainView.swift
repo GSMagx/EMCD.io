@@ -11,7 +11,7 @@ struct MainView: View {
     var body: some View {
         ZStack {
             VStack {
-                Image("EMCD_logo")
+                Image("")
                     .resizable()
                     .scaledToFill()
                     .frame(width: 50, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
@@ -20,7 +20,7 @@ struct MainView: View {
             }
             VStack{
                 CointsView()
-                    .padding(.top, -485.0)
+                    .padding(.top, -500.0)
                     
             }
             HStack{
@@ -51,7 +51,6 @@ struct MainView: View {
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            MainView()
             MainView()
         }
     }
