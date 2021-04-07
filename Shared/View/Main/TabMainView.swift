@@ -35,7 +35,7 @@ struct TabMainView: View {
                                             Image(systemName: "arrow.left")
                                         }.foregroundColor(Color.black)
                                         
-                                        Image("EMCD_logo")
+                                        Image("")
                                             .renderingMode(.template)
                                             .resizable()
                                             
