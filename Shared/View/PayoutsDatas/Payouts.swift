@@ -44,7 +44,7 @@ struct PayoutsView: View {
         List{
             ForEach(payoutsData, id: \.id) { item in
                 
-                Text(item.payouts.gmtTime)
+                Text(item.id)
                        
                 
             }

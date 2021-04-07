@@ -11,7 +11,6 @@ struct TabMainView: View {
     
     var body: some View {
         
-    
         NavigationView {
             
             TabView {
@@ -27,52 +26,51 @@ struct TabMainView: View {
                     .tabItem { Image(systemName: "gearshape.fill") }
             }
             
-            .navigationBarTitle(
-                Text("")
-                , displayMode: .inline)
+            .navigationBarTitle(Text(""), displayMode: .inline)
+            
             .navigationBarItems(leading:
                                     HStack {
-                                        Button(action: {
-                                        }) {
+                                        
+                                        Button(action: { }) {
                                             Image(systemName: "arrow.left")
                                         }.foregroundColor(Color.black)
+                                        
                                         Image("EMCD_logo")
-                                            //  .renderingMode(.template)
+                                            .renderingMode(.template)
                                             .resizable()
                                             
-                                            //  .foregroundColor(.white)
+                                            .foregroundColor(.white)
                                             .aspectRatio(contentMode: .fit)
                                             .frame(width: 280, height: 280, alignment: .center)
                                             .padding(UIScreen.main.bounds.size.width/4+30)
                                         
                                     }
-                                ,trailing:
                                 
+                                , trailing:
+                                    
                                     HStack {
-                                        
-                                        Button(action: {
-                                        }) {
+                                        Button(action: { } ) {
                                             Image(systemName: "magnifyingglass")
                                         }.foregroundColor(Color.black)
-                                    }
-            )
+                                    })
             
-            
-            
-            
-            
-            // .navigationTitle("Home")
-            
-            // .navigationBarTitleDisplayMode(.inline)
-            
-            //   .navigationBarItems(trailing: logoutButton)
-            //           .accentColor(.black)
-            // .edgesIgnoringSafeArea(.all)
         }
     }
 }
+    
+    
+    
+
 struct TabView_Previews: PreviewProvider {
     static var previews: some View {
         TabMainView()
     }
 }
+//   .navigationTitle("Home")
+
+//  .navigationBarTitleDisplayMode(.inline)
+
+// .navigationBarItems(trailing: logoutButton)
+//           .accentColor(.black)
+// .edgesIgnoringSafeArea(.all)
+
