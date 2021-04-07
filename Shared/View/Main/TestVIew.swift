@@ -36,8 +36,8 @@ struct TestVIew: View {
                     ForEach(users, id: \.id) { item in
                         VStack(alignment: .leading){
                             Text(item.name)
-                                .font(.headline)
-                            Text(item.company)
+//                                .font(.headline)
+//                            Text(item.company)
                         }
                     }
                 }

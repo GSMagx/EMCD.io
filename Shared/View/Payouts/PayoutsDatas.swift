@@ -7,46 +7,53 @@
 
 import SwiftUI
 import Foundation
-//struct Payout: Decodable {
-//
-//    var id : String
-//    let timestamp: Int
-//    let gmtTime: String
-//    let amount: Double
-//    let txid: String
-//}
 
-// MARK: - Welcome
 
-struct Payouts: Codable {
-    let payouts: [Payout]
-    var id : String
-}
 
-// MARK: - Payout
-struct Payout: Codable {
-    let timestamp: Int
-    let gmtTime: String
-    let amount: Double
-    let txid: String
+struct Payouts: Decodable {
+    var id = UUID()
+    let username: String
+    let bitcoin, litecoin, bitcoinCash, bitcoinSv: Bitcoin
+    let dash, eth, etc: Bitcoin
+    let notifications: Notifications
+    
 
     enum CodingKeys: String, CodingKey {
-        case timestamp
-        case gmtTime
-        case amount, txid
+        case username, bitcoin, litecoin, id
+        case bitcoinCash
+        case bitcoinSv
+        case dash, eth, etc, notifications
     }
 }
 
+// MARK: - Bitcoin
+struct Bitcoin: Decodable {
+    let balance, totalPaid: Double
+    let address: String?
+    let minPayout: Double
+
+    enum CodingKeys: String, CodingKey {
+        case balance
+        case totalPaid
+        case address
+        case minPayout
+    }
+}
+
+// MARK: - Notifications
+struct Notifications: Codable {
+    let email, telegram: Int
+}
    
 struct PayoutsView: View {
     @State var payoutsData = [Payouts]()
     var body: some View {
         List{
             ForEach(payoutsData, id: \.id) { item in
-                
-                Text(item.id)
+                VStack(alignment: .leading){
+                    Text(item.username)
                        
-                
+                }
             }
         }
         .onAppear(perform: loadData)
@@ -55,7 +62,7 @@ struct PayoutsView: View {
 
 
 func loadData() {
-        guard let url = URL(string: "https://api.emcd.io/v1/eth/payouts/c853c7ec-6954-4dd7-9394-8a70de529adc") else {
+        guard let url = URL(string: "https://api.emcd.io/v1/info/c853c7ec-6954-4dd7-9394-8a70de529adc") else {
             print("Invalid URL")
             return
         }
@@ -66,14 +73,14 @@ func loadData() {
                 //pull out the declaration of the decoder object
                 let decoder = JSONDecoder()
                 //set how we want to interpret dates in the JSON
-               // decoder.dateDecodingStrategy = .iso8601
+                decoder.dateDecodingStrategy = .iso8601
                 //decode directly to an array of User structs rather than a Response
                 if let decodedResponse = try?
                     decoder.decode([Payouts].self, from: data) {
                     DispatchQueue.main.async {
                         //decodedResponse is now [User] rather than Response.User
                         self.payoutsData = decodedResponse
-                        print(decodedResponse)
+                        
                     }
                     return
                 }
