@@ -20,7 +20,7 @@ struct TabMainView: View {
                     .tabItem { Image(systemName: "display.2") }
                 PayoutsView()
                     .tabItem { Image(systemName: "creditcard.fill") }
-                ProfileView()
+                ProfilesView()
                     .tabItem { Image(systemName: "person.fill") }
                 SettingsView()
                     .tabItem { Image(systemName: "gearshape.fill") }

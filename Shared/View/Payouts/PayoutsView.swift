@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct PayoutsView: View {
-    @State var payouts = PayoutsData()
+    @State var payouts = ProfileData()
     var body: some View {
-      PayoutsData()
+      ProfileData()
     }
 }
 
