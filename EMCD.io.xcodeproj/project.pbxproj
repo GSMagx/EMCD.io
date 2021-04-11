@@ -36,6 +36,8 @@
 		FAAD5C95261C8F9500388E9B /* TestVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD5C93261C8F9500388E9B /* TestVIew.swift */; };
 		FAC96227261EEA6C005060C0 /* ProfilesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC96226261EEA6C005060C0 /* ProfilesView.swift */; };
 		FAC96228261EEA6C005060C0 /* ProfilesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC96226261EEA6C005060C0 /* ProfilesView.swift */; };
+		FAC9622E261F25A2005060C0 /* WorkersData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC9622D261F25A2005060C0 /* WorkersData.swift */; };
+		FAC9622F261F25A2005060C0 /* WorkersData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC9622D261F25A2005060C0 /* WorkersData.swift */; };
 		FAFA79A9260F93300032F2D1 /* EMCD_ioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA7996260F932E0032F2D1 /* EMCD_ioApp.swift */; };
 		FAFA79AA260F93300032F2D1 /* EMCD_ioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA7996260F932E0032F2D1 /* EMCD_ioApp.swift */; };
 		FAFA79AB260F93300032F2D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA7997260F932E0032F2D1 /* ContentView.swift */; };
@@ -58,6 +60,7 @@
 		FAA656CF2614ECF400541ACF /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		FAAD5C93261C8F9500388E9B /* TestVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVIew.swift; sourceTree = "<group>"; };
 		FAC96226261EEA6C005060C0 /* ProfilesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilesView.swift; sourceTree = "<group>"; };
+		FAC9622D261F25A2005060C0 /* WorkersData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkersData.swift; sourceTree = "<group>"; };
 		FAFA7996260F932E0032F2D1 /* EMCD_ioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EMCD_ioApp.swift; sourceTree = "<group>"; };
 		FAFA7997260F932E0032F2D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FAFA7998260F93300032F2D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -106,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				FA30FFFF261E24B5003294D9 /* ProfileData.swift */,
+				FAC9622D261F25A2005060C0 /* WorkersData.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -339,6 +343,7 @@
 				FAAD5C94261C8F9500388E9B /* TestVIew.swift in Sources */,
 				FAA656C42614EC3900541ACF /* WorkersView.swift in Sources */,
 				FAFA79BE260F96820032F2D1 /* MainView.swift in Sources */,
+				FAC9622E261F25A2005060C0 /* WorkersData.swift in Sources */,
 				FA30FFFB261E2490003294D9 /* PayoutsView.swift in Sources */,
 				FAA656BC2614EACE00541ACF /* TabMainView.swift in Sources */,
 				FAFA79A9260F93300032F2D1 /* EMCD_ioApp.swift in Sources */,
@@ -360,6 +365,7 @@
 				FAA656C52614EC3900541ACF /* WorkersView.swift in Sources */,
 				FAFA79BF260F96820032F2D1 /* MainView.swift in Sources */,
 				FAAD5C95261C8F9500388E9B /* TestVIew.swift in Sources */,
+				FAC9622F261F25A2005060C0 /* WorkersData.swift in Sources */,
 				FA30FFFC261E2490003294D9 /* PayoutsView.swift in Sources */,
 				FAA656BD2614EACE00541ACF /* TabMainView.swift in Sources */,
 				FAFA79AA260F93300032F2D1 /* EMCD_ioApp.swift in Sources */,

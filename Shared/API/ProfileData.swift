@@ -4,9 +4,57 @@
 //
 //  Created by ALEX on 07.04.21.
 //
-
+//{
+//  "username": "GSMag",
+//  "bitcoin": {
+//    "balance": 0,
+//    "total_paid": 0,
+//    "address": null,
+//    "min_payout": 0
+//  },
+//  "litecoin": {
+//    "balance": 0,
+//    "total_paid": 0,
+//    "address": null,
+//    "min_payout": 0
+//  },
+//  "bitcoin_cash": {
+//    "balance": 0,
+//    "total_paid": 0,
+//    "address": null,
+//    "min_payout": 0
+//  },
+//  "bitcoin_sv": {
+//    "balance": 0,
+//    "total_paid": 0,
+//    "address": null,
+//    "min_payout": 0
+//  },
+//  "dash": {
+//    "balance": 0,
+//    "total_paid": 0,
+//    "address": null,
+//    "min_payout": 0
+//  },
+//  "eth": {
+//    "balance": 0.07676459,
+//    "total_paid": 5.59595634,
+//    "address": "0x3fb31afeba9f7c34be7f0fa6fdb4d7872af0a20c",
+//    "min_payout": 0.1
+//  },
+//  "etc": {
+//    "balance": 0,
+//    "total_paid": 0,
+//    "address": null,
+//    "min_payout": 0.1
+//  },
+//  "notifications": {
+//    "email": 1,
+//    "telegram": 1
+//  }
+//}
 import SwiftUI
-struct Payouts: Codable {
+struct Profile: Codable {
     let username: String
     let bitcoin: Bitcoin
     let litecoin: Bitcoin
@@ -34,18 +82,18 @@ struct Notifications: Codable {
 
 struct ProfileData: View {
 
-    @State var payoutsData = [Payouts]()
+    @State var profileData = [Profile]()
     
     var body: some View {
         
         HStack {
   
             //    List{
-            if payoutsData.isEmpty {
+            if profileData.isEmpty {
                 Text("Пусто")
             } else {
                 
-         Text(String(payoutsData[0].username))
+         Text(String(profileData[0].username))
             }
             //  }
         }
@@ -61,10 +109,10 @@ struct ProfileData: View {
             guard let data = data, error == nil else {
                 return
             }
-            let payots = try? JSONDecoder().decode(Payouts.self, from: data)
+            let payots = try? JSONDecoder().decode(Profile.self, from: data)
             if let payots = payots {
                 DispatchQueue.main.async {
-                payoutsData.append(payots)
+                profileData.append(payots)
                 print(payots)
                 }
             } else {

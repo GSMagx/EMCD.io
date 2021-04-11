@@ -10,7 +10,7 @@ import SwiftUI
 struct WorkersView: View {
     var body: some View {
         
-        TestVIew()
+        WorkersData()
     }
 }
 
