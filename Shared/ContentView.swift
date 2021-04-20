@@ -7,14 +7,25 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct Todo: Codable {
     
+    public let total_count: Int
+    public let all: Int
+    public let active: Int
+    public let inactive: Int
+    public let dead_count: Int
+}
+
+struct ContentView: View {
+    @ObservedObject var fetch = FetchToDo()
     var body: some View {
-       
-        TabMainView()
-        
-          
-        
+        VStack {
+            List(fetch.todos) { todo in
+                VStack(alignment: .leading) {
+                    Text(String(todo.active))
+            }
+            }
+        }
     }
 }
 

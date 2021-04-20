@@ -26,6 +26,8 @@
 		FA5536BD261354AF00446948 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5536BB261354AF00446948 /* ProfileHeaderView.swift */; };
 		FA5536C1261388D600446948 /* CointsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5536C0261388D600446948 /* CointsView.swift */; };
 		FA5536C2261388D600446948 /* CointsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5536C0261388D600446948 /* CointsView.swift */; };
+		FA601FF02624CFB2007D68DF /* FetchToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA601FEF2624CFB2007D68DF /* FetchToDo.swift */; };
+		FA601FF12624CFB2007D68DF /* FetchToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA601FEF2624CFB2007D68DF /* FetchToDo.swift */; };
 		FAA656BC2614EACE00541ACF /* TabMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA656BB2614EACE00541ACF /* TabMainView.swift */; };
 		FAA656BD2614EACE00541ACF /* TabMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA656BB2614EACE00541ACF /* TabMainView.swift */; };
 		FAA656C42614EC3900541ACF /* WorkersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA656C32614EC3900541ACF /* WorkersView.swift */; };
@@ -55,6 +57,7 @@
 		FA5536B62613546C00446948 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		FA5536BB261354AF00446948 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		FA5536C0261388D600446948 /* CointsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CointsView.swift; sourceTree = "<group>"; };
+		FA601FEF2624CFB2007D68DF /* FetchToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchToDo.swift; sourceTree = "<group>"; };
 		FAA656BB2614EACE00541ACF /* TabMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabMainView.swift; sourceTree = "<group>"; };
 		FAA656C32614EC3900541ACF /* WorkersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkersView.swift; sourceTree = "<group>"; };
 		FAA656CF2614ECF400541ACF /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -101,6 +104,7 @@
 		FA09ACF3261247A000939EC0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FA601FEF2624CFB2007D68DF /* FetchToDo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -349,6 +353,7 @@
 				FAFA79A9260F93300032F2D1 /* EMCD_ioApp.swift in Sources */,
 				FA5536C1261388D600446948 /* CointsView.swift in Sources */,
 				FA5536B72613546C00446948 /* LoginView.swift in Sources */,
+				FA601FF02624CFB2007D68DF /* FetchToDo.swift in Sources */,
 				FA5536BC261354AF00446948 /* ProfileHeaderView.swift in Sources */,
 				FAC96227261EEA6C005060C0 /* ProfilesView.swift in Sources */,
 				FA300000261E24B5003294D9 /* ProfileData.swift in Sources */,
@@ -371,6 +376,7 @@
 				FAFA79AA260F93300032F2D1 /* EMCD_ioApp.swift in Sources */,
 				FA5536C2261388D600446948 /* CointsView.swift in Sources */,
 				FA5536B82613546C00446948 /* LoginView.swift in Sources */,
+				FA601FF12624CFB2007D68DF /* FetchToDo.swift in Sources */,
 				FA5536BD261354AF00446948 /* ProfileHeaderView.swift in Sources */,
 				FAC96228261EEA6C005060C0 /* ProfilesView.swift in Sources */,
 				FA300001261E24B5003294D9 /* ProfileData.swift in Sources */,
@@ -511,9 +517,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "xyz.gsmagx.EMCD-io";
 				PRODUCT_NAME = EMCD.io;
 				SDKROOT = iphoneos;
-				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -535,9 +541,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "xyz.gsmagx.EMCD-io";
 				PRODUCT_NAME = EMCD.io;
 				SDKROOT = iphoneos;
-				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

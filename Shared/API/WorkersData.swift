@@ -32,25 +32,25 @@ struct Workers: Codable {
 }
 
 
-
-struct WorkersData: View {
-    @State var workersData = [Workers]()
-    var body: some View {
-        HStack {
-  
+struct WorkersData : View {
+    
+    
+ @State  var workersData = [Workers]()
+ @State  var user = [User]()
+   var body: some View {
+    HStack {
+        List{
             //    List{
-            if workersData.isEmpty {
-                Text("Пусто")
+        if workersData.isEmpty {
+            Text(user[0].address)
             } else {
-                
-                Text(String(workersData[0].dead_count))
+    Text("Пусто")
             }
-            //  }
         }
         .onAppear(perform: loadData)
         
-    }
-
+   }
+   }
     func loadData() {
         guard let url = URL(string: "https://api.emcd.io/v1/eth/workers/c853c7ec-6954-4dd7-9394-8a70de529adc") else {
             return
@@ -71,11 +71,11 @@ struct WorkersData: View {
         }.resume()
     }
     
-}
+ }
 
 
-struct WorkersData_Previews: PreviewProvider {
-    static var previews: some View {
-        WorkersData()
-    }
-}
+//struct WorkersData_Previews: PreviewProvider {
+//    static var previews: some View {
+//        WorkersData()
+//    }
+//}
